@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --LIGHT-COLOR: whitesmoke;
+    --DARK-BGCOLOR: #000029;
+    --LIGHT-BGCOLOR: #FFE19C;
+    --NARUTOMAKI-COLOR: #EA85AF;
+    --EGG-COLOR: #E76F51;
+}
+
+html {
+    font-size: 1.5rem;
+    font-family: "Mulish", serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    background-color: var(--DARK-BGCOLOR);
+}
+
+header, nav {
+    display: flex;
+}
+
+header {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 2rem 2rem;
+    background-color: var(--DARK-BGCOLOR);
+    height: 60px;
+    border-bottom: 2px solid var(--LIGHT-COLOR);
+}
+
+.logo {
+    color: var(--LIGHT-COLOR);
+    font-weight: lighter;
+}
+
+.navbar {
+    flex-flow: row nowrap;
+    gap: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-right: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:any-link {
+    color: var(--LIGHT-COLOR);
+}
+
+a:any-link {
+    color: var(--LIGHT-COLOR);
+}
+
+a:hover, a:focus {
+    color: rgba(245, 245, 245, 0.559);
+}
+
+
