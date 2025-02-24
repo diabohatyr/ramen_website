@@ -8,7 +8,7 @@
 
 :root {
     --LIGHT-COLOR: whitesmoke;
-    --DARK-BGCOLOR: #000029;
+    --DARK-BGCOLOR: rgb(22, 22, 22);
     --LIGHT-BGCOLOR: #FFE19C;
     --NARUTOMAKI-COLOR: #EA85AF;
     --EGG-COLOR: #E76F51;
@@ -22,6 +22,7 @@ html {
 body {
     min-height: 100vh;
     display: flex;
+    flex-flow: column nowrap;
     background-color: var(--DARK-BGCOLOR);
 }
 
@@ -40,7 +41,7 @@ header {
 }
 
 .logo {
-    color: var(--LIGHT-COLOR);
+    color: var(--LIGHT-BGCOLOR);
     font-weight: lighter;
 }
 
@@ -67,6 +68,67 @@ a:any-link {
 
 a:hover, a:focus {
     color: rgba(245, 245, 245, 0.559);
+}
+
+.soul {
+    font-weight: 900;
+    font-size: 14rem;
+    text-align: center;
+    background-image: url(../img/noodles.jpg);
+    background-size: 100%;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: rgba(0, 0, 0, 0.2);
+    background-position: center;
+}
+
+h2 {
+    font-family: "Mulish", serif;
+    display: flex;
+    flex-flow: column nowrap;
+    font-size: 3rem;
+    text-align: center;
+
+}
+
+.about {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    color: var(--LIGHT-COLOR);
+
+    margin: 0 auto;
+    width: 100%;
+    background-image: url(../img/bowl.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.about-section {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 5rem;
+    text-align: center;
+    color: var(--LIGHT-COLOR);
+    background-position-y: center;
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    /* font-size: 1.5rem; */
+    /* font-weight: bold; */
+}
+
+.about::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
 }
 
 
