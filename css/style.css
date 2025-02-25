@@ -70,7 +70,7 @@ a:hover, a:focus {
     color: rgba(245, 245, 245, 0.559);
 }
 
-.soul {
+.ramen {
     font-weight: 900;
     font-size: 14rem;
     text-align: center;
@@ -89,15 +89,12 @@ h2 {
     flex-flow: column nowrap;
     font-size: 3rem;
     text-align: center;
-
+    text-transform: uppercase;
 }
 
-.about {
+.about-short {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
-    color: var(--LIGHT-COLOR);
-
     margin: 0 auto;
     width: 100%;
     background-image: url(../img/bowl.png);
@@ -107,21 +104,18 @@ h2 {
     position: relative;
 }
 
-.about-section {
+.about-short-section {
     display: flex;
     flex-flow: row nowrap;
     padding: 5rem;
     text-align: center;
     color: var(--LIGHT-COLOR);
     background-position-y: center;
-    width: 70%;
     margin: 0 auto;
     position: relative;
-    /* font-size: 1.5rem; */
-    /* font-weight: bold; */
 }
 
-.about::before {
+.about-short::before {
     content: "";
     position: absolute;
     top: 0;
@@ -131,4 +125,45 @@ h2 {
     background: rgba(0, 0, 0, 0.6);
 }
 
+h1 {
+    color: var(--LIGHT-COLOR);
+    text-align: center;
+    padding: 2rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
 
+.about {
+    display: flex;
+    flex-flow: row nowrap;
+    color: white;
+    width: 100%;
+}
+
+.about .about-section {
+    display: flex;
+    padding: 3rem;
+    font-weight: 500;
+    font-size: 1.3rem;
+    align-items: center;
+    text-align: center;
+}
+
+.why-article {
+    display: flex;
+    color: white;
+    padding: 3rem;
+    background-image: url(../img/japan.jpg);
+    background-size: 100%;
+    height: 30vh;
+    flex-flow: row nowrap;
+}
+
+.why-article .why-p {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin: 0 auto;
+    
+}
