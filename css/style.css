@@ -48,6 +48,7 @@ nav a {
 
 nav a:hover{
     border: white 1px solid;
+    border-radius: 30px;
 }
 
 nav .logo {
@@ -67,6 +68,7 @@ nav .logo img {
 
 nav .reservation{
     background-color: var(--ACCENT-COLOR);
+    border-radius: 30px;
 }
 
 nav svg {
@@ -81,79 +83,14 @@ nav svg {
     display: none;
 }
 
-@media(max-width: 820px) {
-    .links-container {
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-
-        position: fixed;
-        top: 0;
-        right: -100%;
-        z-index: 10;
-        width: 300px;
-        background-color: black;
-        box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
-        transition: 0.60s ease-out;
-    }
-
-    nav a {
-        box-sizing: border-box;
-        height: auto;
-        height: 40px;
-        width: 100%;
-        padding: 20px 30px;
-        justify-content: flex-start;
-    }
-
-    .open-sidebar-button, .close-sidebar-button {
-        padding: 20px;
-        display: block;
-    }
-
-    #sidebar-active:checked ~ .links-container {
-        right: 0;
-    }
-
-    #sidebar-active:checked ~ #overlay {
-        height: 100%;
-        width: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 9;
-    }
-}
-
-
-
-
-/* .logo {
-    color: var(--LIGHT-BGCOLOR);
-    font-weight: lighter;
-} */
-
-/* 
-a {
-    text-decoration: none;
-}
-
-a:any-link {
-    color: var(--LIGHT-COLOR);
-}
-
-a:any-link {
-    color: var(--LIGHT-COLOR);
-}
-
-a:hover, a:focus {
-    color: rgba(245, 245, 245, 0.559);
-} */
-/* 
 .ramen {
     font-weight: 900;
-    font-size: 14rem;
+    display: block;
+    font-size: 15vw;
+    width: fit-content;
+    margin: auto;
     text-align: center;
+
     background-image: url(../img/noodles.jpg);
     background-size: 100%;
     text-transform: uppercase;
@@ -248,4 +185,48 @@ h1 {
     align-items: center;
     margin: 0 auto;
 
-} */
+}
+
+@media(max-width: 820px) {
+    .links-container {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 10;
+        width: 300px;
+        background-color: black;
+        box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
+        transition: 0.60s ease-out;
+    }
+
+    nav a {
+        box-sizing: border-box;
+        height: auto;
+        height: 40px;
+        width: 100%;
+        padding: 20px 30px;
+        justify-content: flex-start;
+    }
+
+    .open-sidebar-button, .close-sidebar-button {
+        padding: 20px;
+        display: block;
+    }
+
+    #sidebar-active:checked ~ .links-container {
+        right: 0;
+    }
+
+    #sidebar-active:checked ~ #overlay {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+    }
+}
