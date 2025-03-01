@@ -7,35 +7,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/icon.png">
-    <title>Ramen ARDI</title>
+    <title>About ARDI</title>
 </head>
 
 <body>
-    <header>
-        <div class="logo">RAMEN ARDI</div>
-        <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="index.html#menu">Menu</a>
-            <a href="hours.html">Hours</a>
-            <a href="contact.html">Contact</a>
-            <a href="reservation.html" class="reserv">Reservation</a>
+    <section>
+        <nav>
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#FFFFFF"><path d="M480-120q-117 0-198.5-81.5T200-400q0-77 25.5-155t66-141.5Q332-760 382-800t98-40q49 0 98.5 40t90 103.5Q709-633 734.5-555T760-400q0 117-81.5 198.5T480-120Zm0-80q83 0 141.5-58.5T680-400q0-57-19.5-120t-49-116.5Q582-690 547-725t-67-35q-31 0-66.5 35t-65 88.5Q319-583 299.5-520T280-400q0 83 58.5 141.5T480-200Zm40-40q17 0 28.5-11.5T560-280q0-17-11.5-28.5T520-320q-50 0-85-35t-35-85q0-17-11.5-28.5T360-480q-17 0-28.5 11.5T320-440q0 83 58.5 141.5T520-240Zm-40-240Z"/></svg>
+                RAMEN ARDI
+            </div>
+
+            <input type="checkbox" id="sidebar-active">
+            <label for="sidebar-active" class="open-sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            </label>
+
+            <label id="overlay" for="sidebar-active"></label>
+
+            
+            <div class="links-container">
+                <label for="sidebar-active" class="close-sidebar-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </label>
+                
+                <a href="https://www.instagram.com/"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="30px" height="30px" fill-rule="nonzero"><g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M8,3c-2.757,0 -5,2.243 -5,5v8c0,2.757 2.243,5 5,5h8c2.757,0 5,-2.243 5,-5v-8c0,-2.757 -2.243,-5 -5,-5zM8,5h8c1.654,0 3,1.346 3,3v8c0,1.654 -1.346,3 -3,3h-8c-1.654,0 -3,-1.346 -3,-3v-8c0,-1.654 1.346,-3 3,-3zM17,6c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM12,7c-2.757,0 -5,2.243 -5,5c0,2.757 2.243,5 5,5c2.757,0 5,-2.243 5,-5c0,-2.757 -2.243,-5 -5,-5zM12,9c1.654,0 3,1.346 3,3c0,1.654 -1.346,3 -3,3c-1.654,0 -3,-1.346 -3,-3c0,-1.654 1.346,-3 3,-3z"></path></g></g></svg></a>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="menu.html">Menu</a>
+                <a href="reservation.html" class="reservation">Reservation</a>
+
+            </div>
         </nav>
-    </header>
 
-    <h1>About us</h1>
-    <article id="about" class="about">
-        <p class="about-section">
-            ARDI was founded by Diana and Artem, born from a deep love for ramen and Japanese cuisine. Our journey took us to Japan, where we explored the rich flavors and traditions of authentic ramen, bringing the best tastes from our trip back to our restaurant. 
-        </p>
-    </article>
+        <section class="about-wrapper">
+            <div class="about-section">
+                <h1>About us</h1>
+                <article id="about" class="about">
+                    <p>
+                        ARDI was founded by Diana and Artem, born from a deep love for ramen and Japanese cuisine. Our journey took us to Japan, where we explored the rich flavors and traditions of authentic ramen, bringing the best tastes from our trip back to our restaurant. At ARDI, we believe ramen is more than just a dish — it’s warmth, comfort, and a taste of home. 
+                    </p>
+                </article>
+            </div>
+                
+        </section>
 
-    <!-- <img src="img/japan.jpg" alt="Japan"> -->
-    <article class="why-article">
-        <p class="why-p">
-            Why ramen? Because ramen is love. Ramen is home. Ramen is ARDI. 
-        </p>
-    </article>
+    </section>
+        
+    <footer>
+        <p>123 Technology park, Brno City, Czech Republic | Phone: <a href="tel:123-456-7890">123-456-7890</a> | Email: <a href="mailto:ramenardi@gmail.com">ramenardi@gmail.com</a></p>
+        <p>Copyright © 2025 RAMEN ARDI </p>
+    </footer>
     
 </body>
 
