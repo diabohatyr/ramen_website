@@ -11,6 +11,10 @@
     box-sizing: border-box;
 }
 
+main {
+    flex: 1;
+}
+
 html {
     font-size: 1.3rem;
     font-family: "Mulish", serif;
@@ -95,7 +99,7 @@ nav svg {
     width: fit-content;
     margin: auto;
     text-align: center;
-
+    margin-top: 0;
     background-image: url(../img/noodles.jpg);
     background-size: 100%;
     text-transform: uppercase;
@@ -103,21 +107,6 @@ nav svg {
     background-clip: text;
     color: rgba(0, 0, 0, 0.2);
     background-position: center;
-
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
-h2 {
-    font-family: "Mulish", serif;
-    display: flex;
-    flex-flow: column nowrap;
-    font-size: clamp(40px, 4vw, 70px);
-    text-align: center;
-    text-transform: uppercase;
-    color: white;
-    font-weight: lighter;
-    margin-top: 3rem;
 }
 
 .about-short {
@@ -299,6 +288,65 @@ footer a:hover {
     width: 100%;
 }
 
+.our-menu {
+    padding-top: 1.3rem;
+    background-color:#774d11;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.our-menu h1 {
+    font-size: 4vw;
+}
+
+.our-menu h2 {
+    color: var(--LIGHT-COLOR);
+    font-size: 3vw;
+    text-align: center;
+    padding: 0.5rem 0;
+    text-transform: uppercase;
+    font-weight: lighter;
+    white-space: nowrap;
+}
+
+.main-menu {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    gap: 20px;
+}
+
+.inner-menu {
+    flex: 1 1 300px;
+}
+
+.menu-content {
+    width: 100%;
+}
+
+.menu-content img {
+    width: 30vw;
+    height: auto;
+    display: block;
+    border-radius: 30px;
+    border: 2px solid var(--LIGHT-COLOR);
+}
+
+.menu-text {
+    padding: 1.2rem 1.2rem;
+    color: var(--LIGHT-COLOR);
+}
+
+.menu-text p {
+    font-size: 1.5vw;
+    text-align: center;
+    font-size: clamp(12px, 2vw, 18px);
+}
+
+
 @media(max-width:1161px) {
 
     .about-wrapper {
@@ -321,6 +369,24 @@ footer a:hover {
         text-align: center;
         color: white;
         width: 100%;
+    }
+
+    .our-menu h1 {
+        font-size: 9vw;
+    }
+
+    .our-menu h2 {
+        font-size: 4vw;
+    }
+
+    .main-menu {
+        flex-flow: column;
+    }
+
+    .menu-content img {
+        height: auto;
+        width: 70vw;
+        margin: auto;
     }
 }
 
