@@ -414,6 +414,10 @@ button:hover {
     border: 2px solid var(--LIGHT-COLOR);
 }
 
+.logo a:hover {
+    border: none;
+}
+
 @media(max-width:1161px) {
 
     .about-wrapper {
