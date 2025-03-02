@@ -515,8 +515,6 @@ button:hover {
         height: 30vh;
     }
 
-
-
     .booking-form {
 
         max-width: 90vw;
@@ -524,5 +522,9 @@ button:hover {
 
     .booking-form h1 {
         font-size: 8vw;
+    }
+
+    button {
+        font-size: 4vw;
     }
 }
