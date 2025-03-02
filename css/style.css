@@ -346,6 +346,73 @@ footer a:hover {
     font-size: clamp(12px, 2vw, 18px);
 }
 
+.reservation-page {
+    background-image: url(../img/restaurant.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+}
+
+.booking-form {
+    background: rgba(0, 0, 0, 0.857);
+    padding: 2rem;
+    max-width: 50vw;
+
+    margin: auto;
+    border-radius: 30px;
+    border: 2px solid var(--LIGHT-COLOR);
+    align-items: center;
+}
+
+.booking-form h1  {
+    font-size: 4vw;
+}
+.input-group {
+    color: var(--LIGHT-COLOR);
+    width: 100%;
+    padding: 15px;
+}
+
+.input-group label {
+    padding: 20px;
+    
+}
+
+input {
+    border-radius: 30px;
+    border: 2px solid rgb(255, 255, 255);
+    background: rgb(215, 215, 215);
+    height: 50px;
+    width: 100%;
+    padding: 0 15px;
+}
+
+select {
+    border-radius: 30px;
+    border: 2px solid rgb(206, 206, 206);
+    background:rgb(215, 215, 215);
+    height: 2vw;
+    width: 100%;
+    height: 50px;
+    padding: 5px;
+}
+
+button {
+    margin: 20px;
+    padding: 19px;
+    border-radius: 30px;
+    border: 2px solid #6c0a0a;
+    font-size: 1.5vw;
+    background: #6c0a0a;
+    color: var(--LIGHT-COLOR);
+    margin: auto;
+    width: 100%;
+}
+
+button:hover {
+    border: 2px solid var(--LIGHT-COLOR);
+}
 
 @media(max-width:1161px) {
 
@@ -388,6 +455,8 @@ footer a:hover {
         width: 70vw;
         margin: auto;
     }
+
+    
 }
 
 @media(max-width: 820px) {
@@ -440,5 +509,16 @@ footer a:hover {
     .menu-on-main {
         width: 85vw;
         height: 30vh;
+    }
+
+
+
+    .booking-form {
+
+        max-width: 90vw;
+    }
+
+    .booking-form h1 {
+        font-size: 8vw;
     }
 }
